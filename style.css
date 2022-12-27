@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@font-face {
+    font-family: 'nimbus_monobold';
+    src: url('nimbusmono-regular-webfont.woff');
+}
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    place-items: center;
+}
+
+#main-body {
+    flex-flow: column wrap;
+    height: 70%;
+    width: 90%;
+    border-radius: 5px;
+}
+
+textarea {
+    font-family: 'nimbus_monobold';
+    font-size: 1.15rem;
+    resize: none;
+    height: 15rem;
+    width: 21.5rem;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 1rem 3rem 1rem;
+    transition: all 0s ease-in-out;
+}
+
+textarea:focus {
+    border: 1px ridge rgb(205, 20, 20);
+    cursor: pointer;
+    box-shadow: 0px 3px 7px 0.5px rgba(29, 29, 29, 0.445);
+}
+
+.text {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(73, 73, 73);
+    font-size: 0.9rem;
+    letter-spacing: -0.6px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 1.5rem 0.5rem 2.5rem 0.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    position: relative;
+    top: -3.25rem;
+    height: 2rem;
+    width: 6rem;
+    border: 0px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: rgb(205, 20, 20);
+    transition: all 0.15s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(205, 20, 20);
+    transform: scale(1.03);
+    box-shadow: 0px 5px 8px 0.7px rgba(29, 29, 29, 0.445);
+}
+
+.para {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0.25rem 0rem 0.25rem 0rem;
+    color: rgb(73, 73, 73);
+}
+
+.counter {
+    position: relative;
+    top: -1.25rem;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+
+
+.logo {
+    position: relative;
+    top: -8.5rem;
+    width: 22rem;
+}
+
+@media (min-width: 700px) and (max-width: 1920px) {
+
+    textarea {
+        resize: none;
+        height: 20rem;
+        width: 40rem;
+    }
+
+    .counter {
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        gap: 19rem;
+    }
+
+    .text {
+        letter-spacing: -.65px;
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        top: -6.5rem;
+        width: 42rem;
+    }
+}

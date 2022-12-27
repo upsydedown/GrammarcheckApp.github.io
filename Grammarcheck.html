@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GrammarCheck</title>
+</head>
+
+<body class="container">
+    <div id="main-body" class="container">
+        <img class="logo" src="logo.png" alt="" srcset="">
+        <h4 class="text">Ensure your English writing is mistake-free. <br> Paste your text or start typing below to check for
+            grammar, spelling, and punctuation errors.</h4>
+        <div id="content-box" class="">
+            <textarea id="textarea" maxlength="500" placeholder="Enter Text"></textarea>
+        </div>
+        <button onclick="copyText()" class="btn">Copy Text</button>
+        <div class="counter container">
+            <p class="para">Total characters: <span id="character-count">0</span></p>
+            <p class="para">Remaining characters: <span id="remaining-counter">500</span></p>
+        </div>
+    </div>
+    <script src="Grammarcheck.js"></script>
+</body>
+
+</html>
